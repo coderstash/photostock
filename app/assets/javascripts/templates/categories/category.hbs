@@ -1,6 +1,6 @@
 {{! Header }}
 <header class="white_gradient j-viewheader">
-	<span class="header_title">Category: </span>		
+	<span class="header_title">Category: </span>
 </header>
 
 {{! Column }}
@@ -8,6 +8,9 @@
 {{! Viewport }}
 <section class="j-outerwrap j-viewport viewport">
 	<div class="j-viewport-scroller scroller">
-		{{outlet}}
+    {{#times 12}}
+    <p>Bobs Looper</p>
+    {{/times}}
+		{{!-- {{outlet}} --}}
 	</div>
 </section>

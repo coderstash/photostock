@@ -1,0 +1,7 @@
+<div class="poster_view">
+  <div class="title">{{ displayTitle }}</div>
+  {{#link-to objectRoute routeModel}}
+    <img {{bind-attr src=displayObjectUrl}} width=166 />
+    <span class='large_badge'>{{ badgeCount }}</span>
+  {{/link-to}}
+</div>
