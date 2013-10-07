@@ -4,7 +4,7 @@
 <div id="column_main" class="full_height_column j-column scroller">
 	<div class="scroll-wrap">
 		<section class="column_list">
-			<div {{action toggleCategories on='click'}} {{bind-attr class='viewingCategories:active :section_toggle :pointer'}}> {{ toggleArrow }}Categories</div>		
+			<div {{action toggleCategories on='click'}} {{bind-attr class='viewingCategories:active :section_toggle :pointer :white_gradient'}}> {{ toggleArrow }}Categories</div>
 			<ul {{bind-attr class='viewingCategories:is_visible:is_hidden :item_list'}}>
 				<li class="item">{{#link-to 'category' 'cars'}}Cars{{/link-to}}</li>
 				<li class="item">{{#link-to 'category' 'ufos'}}UFO's{{/link-to}}</li>
