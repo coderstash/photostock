@@ -1,0 +1,25 @@
+{{! Header }}
+
+{{! Column }}
+<div id="column_main" class="full_height_column j-column scroller">
+	<div class="scroll-wrap">
+		<section class="column_list">
+			<div {{action toggleCategories on='click'}} {{bind-attr class='viewingCategories:active :section_toggle :pointer'}}> {{ toggleArrow }}Categories</div>		
+			<ul {{bind-attr class='viewingCategories:is_visible:is_hidden :item_list'}}>
+				<li class="item">{{#link-to 'category' 'cars'}}Cars{{/link-to}}</li>
+				<li class="item">{{#link-to 'category' 'ufos'}}UFO's{{/link-to}}</li>
+				<li class="item">{{#link-to 'category' 'gadgets'}}Gadgets{{/link-to}}</li>
+			</ul>
+		</section>
+	</div>
+	<section class="column_list bottom_section">
+		{{outlet featured_item }}
+	<section>
+</div>
+
+{{! Viewport }}
+<section id="content" class="viewport j-outerwrap j-viewport">
+	<div class="j-viewport-scroller scroller">
+		{{outlet}}
+	</div>
+</section>

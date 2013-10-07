@@ -1,0 +1,9 @@
+	<nav id="main_nav" class="full_section">
+		<ul class="full_section">
+			<li title='Home'>{{#link-to 'index'}}Home{{/link-to}} </li>
+			<li title='Categories'>{{#link-to 'categories'}}Categories {{toggleArrow}} {{/link-to}} </li>
+		</ul>
+		<section id='cart_preview'>
+			<span class='icon small_icon cart'></span> Cart Items: {{ cartCount }}
+		</section>		
+	</nav>
