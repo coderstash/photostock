@@ -1,0 +1,4 @@
+photostock
+==========
+
+Ember training application
